@@ -60,7 +60,7 @@ export default defineConfig<EyesFixture>({
     baseURL: process.env.BASE_URL || "https://demo.playwright.dev/",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on-all-retries",
+    trace: "retain-on-failure",
     screenshot: 'on',
     headless: true,
     viewport: { width: 1920, height: 1080 }
